@@ -11,8 +11,8 @@ function result(){
         alert("Marks can't be greater than 100 and less than 0.");
     }
     else{
-        var totalMarks = +physics.value + +chemistry.value + +mathematics.value + +english.value;
-        var percentage = (totalMarks / 400) * 100;
+        var obtainedMarks = +physics.value + +chemistry.value + +mathematics.value + +english.value;
+        var percentage = (obtainedMarks / 400) * 100;
         var grade;
         if(percentage >= 80){
             grade = 'A+';
@@ -29,7 +29,7 @@ function result(){
         else{
             grade = "Fail";
         }
-        paraOne.innerHTML = 'Total Marks: ' + totalMarks;
+        paraOne.innerHTML = 'Obtained Marks: ' + obtainedMarks;
         paraTwo.innerHTML = 'Percentage: ' + percentage + '%';
         paraThree.innerHTML = 'Grade: ' + grade;
     }
