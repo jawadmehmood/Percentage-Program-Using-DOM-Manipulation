@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-one">
+        <h1>Percentage Calculator</h1>
+        <br />
+        <form>
+            <label for="physics">Enter Physics Marks</label>
+            <br />
+            <input type="number" id="physics">
+            <br />
+            <label for="chemistry">Enter Chemistry Marks</label>
+            <br />
+            <input type="number" id="chemistry">
+            <br />
+            <label for="mathematics">Enter Mathematics Marks</label>
+            <br />
+            <input type="number" id="mathematics">
+            <br />
+            <label for="english">Enter English Marks</label>
+            <br />
+            <input type="number" id="english">
+            <div class="submit-button">
+                <button onclick="result()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container-two">
+        <p id="para-one">Total Marks:</p>
+        <p id="para-two">Percentage:</p>
+        <p id="para-three">Grade:</p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
